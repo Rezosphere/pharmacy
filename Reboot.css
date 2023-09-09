@@ -1,0 +1,43 @@
+body{
+  font-family: Sahel;
+}
+
+.list {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+}
+.item{
+  scroll-snap-align: start ;
+  scroll-margin-inline: 1em;
+}
+.card-img-top{
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.card:hover{
+  background-color:#e5ecfe;
+}
+
+
+::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Track */
+.list::-webkit-scrollbar-track {
+
+  border-radius: 5px;
+}
+
+/* Handle */
+.list::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 5px;
+}
+.list::-webkit-scrollbar-thumb:hover {
+  background:rgb(83, 83, 83);
+
+}
